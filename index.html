@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css" />
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    /> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-left">
+                <i class="fa-solid fa-circle-dollar-to-slot m"></i>
+                <a href="#">My Website</a>
+            </div>
+            <div class="navbar-mid">
+                <a href="#">Dashboard</a>
+                <a href="#">Credits</a>
+                <a href="#">Account</a>
+                <a href="#">Logout</a>
+            </div>
+            <div class="navbar-right">
+                <div class="credits">
+                    <span>Credit: 500</span>
+                    <img src="./shopping-cart.jpg" alt="Cart" class="cart-icon">
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <h1>
+                <span class="first-half">Largest stock market</span>
+                <span class="second-half">in India</span>
+            </h1>
+            <p>1M clients contribute to over 15% of all retail order volumes in India daily by trading and investing</p>
+            <button>Invest Now !</button>
+        </div>
+    </div>
+
+    <div class="cont2">
+        <div class="audiocont1">
+        <div><button id="recordButton"><i class="fa-solid fa-microphone-lines fa-xl" style="color: #ffffff;"></i></button></div>
+        <div><button id="stopButton" disabled>Save Audio</button></div>
+</div>
+<div class="audiocont2">
+<button id="playButton" disabled><i class="fa-solid fa-play fa-lg" style="color: #3d64a9;"></i></button>
+<button id="pauseButton" disabled><i class="fa-solid fa-pause fa-lg" style="color: #3c5b90;"></i></i></button>
+<button id="backwardButton" disabled><i class="fa-solid fa-rotate-left fa-lg" style="color: #314f81;"></i></button>
+<button id="forwardButton" disabled><i class="fa-solid fa-rotate-right fa-lg" style="color: #2f4c7f;"></i></button>
+</div>
+<audio id="audio" controls></audio>
+    </div>
+
+
+    <div class="container1">
+
+        <div class="progbartext">
+            <div class="tag">
+                <div class="tagtext">
+                <h6>Tag</h6>
+                <p>1M clients contribute to over 15% of all retail order volumes in India daily by trading and investing
+                </p>
+            </div>
+            <div class="toggleswitch">
+                 <label class="toggle-switch">
+    <input type="checkbox">
+    <span class="toggle-slider"></span>
+  </label>
+            </div>
+            </div>
+            <div class="progress-bars-container">
+                <!-- Progress Bars go here -->
+            </div>
+        </div>
+        <div class="doughchart">
+            <div class="dcharttext">
+                <p>Average Speech Rater Score</p>
+                <p>Q1</p>
+            </div>
+            <canvas id="doughnutChart"></canvas>
+        </div>
+    </div>
+    </div>
+
+    <!-- Include Chart.js -->
+
+
+    <div class="footer">
+        <div class="fcontmain">
+        <h1>We are the best Nifty, Bank Nifty Option Tips Specialist and <span style="color: blue;">India's Leading Stock Advisory.</span> </h1>
+        <img src="./Line 1.jpg" alt="line" class="underline">
+        <p>Our customer's trust and the accuracy of recommendations, which we provide is the base of our establishment and make us different from others.</p>
+        </div>
+
+        <div class="fcont1">
+            <div class="fcontleft">
+            <h2>Stock Market Intraday</h2>
+            <p>All our Day Trading calls are the Recommendations or best opinions which are generated from technical & fundamentals data analytics.</p>
+            </div>
+        
+            <div class="fcontright">
+            <h2>Bank Nifty Futures & Options</h2>
+            <p>No.1 advisory services in bank nifty futures and options. Trade with minimum capital and earn big return from option market.No.1 advisory services in bank nifty futures and options. Trade with minimum capital and earn big return from option market.No.1 advisory services in bank nifty futures and options. Trade with minimum capital and earn big return from option market.</p>
+            </div>
+        </div>
+
+        <div class="fcont1">
+            <div class="fcontright">
+            <h2>Minimum Risk / Reward Ratio</h2>
+            <p>Obtaining higher returns is our primary goal. That's why the risk/reward ratio we use to manage capital and risk of loss.</p>
+            </div>
+
+            <div class="fcontleft">
+            <h2>Stock Futures & Options</h2>
+            <p>With the right F&O tips, you will be able to grow your investments easily. Futures and options are a great way to increase your money.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
